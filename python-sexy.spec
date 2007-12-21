@@ -11,6 +11,7 @@ Source0: %{oname}-%{version}.tar.bz2
 License: LGPL
 Group: Development/Python
 Url: http://www.chipx86.com/wiki/Libsexy#sexy-python
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: pygtk2.0-devel
 BuildRequires: libsexy-devel
 Requires: pygtk2.0
