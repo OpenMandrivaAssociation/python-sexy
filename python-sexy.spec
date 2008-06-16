@@ -1,6 +1,6 @@
 %define name python-sexy
 %define version 0.1.9
-%define release %mkrel 1
+%define release %mkrel 2
 %define oname sexy-python
 
 Summary: Python bingings for the sexy GTK+ widgets
