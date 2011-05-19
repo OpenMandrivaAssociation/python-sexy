@@ -1,6 +1,6 @@
 %define name python-sexy
 %define version 0.1.9
-%define release %mkrel 5
+%define release %mkrel 6
 %define oname sexy-python
 
 Summary: Python bingings for the sexy GTK+ widgets
@@ -8,6 +8,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{oname}-%{version}.tar.bz2
+Patch0: sexy-python-0.1.9-link.patch
 License: LGPL
 Group: Development/Python
 Url: http://www.chipx86.com/wiki/Libsexy#sexy-python
@@ -25,6 +26,7 @@ and working around the limitations of the widgets.
 
 %prep
 %setup -q -n %oname-%version
+%patch0 -p0
 
 %build
 %configure2_5x
