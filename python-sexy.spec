@@ -33,12 +33,12 @@ and working around the limitations of the widgets.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 rm -f %buildroot%py_platsitedir/gtk-2.0/sexy.la
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
