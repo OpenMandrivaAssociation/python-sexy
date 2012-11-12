@@ -1,0 +1,22 @@
+--- sexy/Makefile.am.link	2011-05-19 05:25:55.000000000 +0200
++++ sexy/Makefile.am	2011-05-19 05:26:16.000000000 +0200
+@@ -9,7 +9,7 @@
+ pkgpyexec_LTLIBRARIES = sexy.la
+ sexy_la_CFLAGS = $(LIBSEXY_CFLAGS)
+ sexy_la_LDFLAGS = -module -avoid-version -export-symbols-regex initsexy
+-sexy_la_LIBADD = $(LIBSEXY_LIBS)
++sexy_la_LIBADD = $(LIBSEXY_LIBS) -lpython$(PYTHON_VERSION)
+ sexy_la_SOURCES = sexymodule.c 
+ 
+ nodist_sexy_la_SOURCES = sexy.c
+--- sexy/Makefile.in.link	2011-05-19 05:26:21.000000000 +0200
++++ sexy/Makefile.in	2011-05-19 05:26:32.000000000 +0200
+@@ -199,7 +199,7 @@
+ pkgpyexec_LTLIBRARIES = sexy.la
+ sexy_la_CFLAGS = $(LIBSEXY_CFLAGS)
+ sexy_la_LDFLAGS = -module -avoid-version -export-symbols-regex initsexy
+-sexy_la_LIBADD = $(LIBSEXY_LIBS)
++sexy_la_LIBADD = $(LIBSEXY_LIBS) -lpython$(PYTHON_VERSION)
+ sexy_la_SOURCES = sexymodule.c 
+ nodist_sexy_la_SOURCES = sexy.c
+ CLEANFILES = sexy.c
