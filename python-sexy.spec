@@ -3,7 +3,7 @@
 Summary:	Python bingings for the sexy GTK+ widgets
 Name:		python-sexy
 Version:	0.1.9
-Release:	10
+Release:	11
 License:	LGPLv2
 Group:		Development/Python
 Url:		http://www.chipx86.com/wiki/Libsexy#sexy-python
