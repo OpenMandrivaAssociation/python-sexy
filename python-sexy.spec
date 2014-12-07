@@ -11,6 +11,7 @@ Source0:	%{oname}-%{version}.tar.bz2
 Patch0:		sexy-python-0.1.9-link.patch
 BuildRequires:	pkgconfig(libsexy)
 BuildRequires:	pkgconfig(pygtk-2.0)
+BuildRequires:	pkgconfig(python2)
 Requires:	pygtk2.0
 
 %description
@@ -25,7 +26,8 @@ and working around the limitations of the widgets.
 %patch0 -p0
 
 %build
-%configure2_5x
+export PYTHON=%{__python2}
+%configure
 %make
 
 %install
@@ -33,6 +35,6 @@ and working around the limitations of the widgets.
 
 %files
 %doc AUTHORS README NEWS
-%{py_platsitedir}/gtk-2.0/sexy.so
+%{py2_platsitedir}/gtk-2.0/sexy.so
 %{_datadir}/pygtk/2.0/defs/sexy.defs
 
