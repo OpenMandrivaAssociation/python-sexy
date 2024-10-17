@@ -6,7 +6,7 @@ Version:	0.1.9
 Release:	20
 License:	LGPLv2
 Group:		Development/Python
-Url:		http://www.chipx86.com/wiki/Libsexy#sexy-python
+Url:		https://www.chipx86.com/wiki/Libsexy#sexy-python
 Source0:	%{oname}-%{version}.tar.bz2
 Patch0:		sexy-python-0.1.9-link.patch
 BuildRequires:	pkgconfig(libsexy)
